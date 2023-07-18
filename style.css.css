@@ -1,0 +1,181 @@
+*{
+    margin:0 ;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    nav{
+      background-color: rgb(126, 25, 8); 
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      /* height: 100px; */
+      position: sticky;
+      top: 0;
+      
+    
+    }
+    #eee{
+        padding: 2%;
+        /* margin-bottom: 70px; */
+    }
+    nav ul{
+        display: flex;
+    }
+        nav ul li{
+            display: flex;
+            justify-content: space-around;
+    }
+    nav ul li a{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        color: rgb(28, 23, 23);
+        text-decoration: none;
+    
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        }
+        #home::before{
+            content: '';
+            position: absolute;
+            background-image: url(https://media2.themorningcontext.com/media/posts_images/thibault-penin-AWOl7qqsffM-unsplash-1.jpg);
+            height: 600px;
+            width: 100%;
+            background-size:cover;
+            background-position: center;
+            /* z-index for not going an text to image */
+            z-index: -1;
+            opacity: 0.7;
+        }
+        .heading{
+            color: rgba(0, 0, 0, 0.619);
+            margin-top: 20px;
+            text-shadow:2px 1px  sienna;
+            font-size:xx-large;
+            margin-left: 20px;
+            /* background-color: gray; */
+            
+            
+            
+        }
+        .pic{
+            display: flex;
+            margin-top: 20px;
+            /* margin-right: 20px; */
+            margin: 30px;
+            
+        }
+        .reed{
+            color: black;
+            font-size:medium;
+            text-shadow: none;
+        }
+        .rr{
+            margin-top: 450px;
+            margin-left: 800px;
+            color: aliceblue;
+            font-size:medium;
+        }
+        .bb{
+            margin-left: 550PX;
+            margin-top: 40px;
+            font-size: large;
+        }
+        span{
+            color: rgb(227, 147, 147);
+        }
+        .cc{
+            background-image: url(https://images.unsplash.com/photo-1629196613836-0a7e2541990a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fHw%3D&w=1000&q=80);
+            /* background-image: url(https://media.istockphoto.com/id/1177300029/vector/abstract-backdrop-grey-background-graphic-minimal-empty-room-with-spotlight-effect-frame.jpg?s=612x612&w=0&k=20&c=KpX-YvR1NmBY-myBi9oI0e8Ka4SKipWtGPv_oW7GfVM=); */
+            height: 400px;
+            width: 100%;
+            opacity: 2px;
+            margin-left: 10px;
+            margin: 30px;
+        }
+        .ee{
+            margin-top: 10px;
+            font-size: large;
+            color: rgb(126, 25, 8);
+            
+        }
+        .ach{
+            text-align: center;
+            color: rgb(126, 25, 8);
+            font-size: large;
+            margin-top: 10px;
+            
+
+        }
+        #net{
+            background-image: url(https://images.unsplash.com/photo-1629196613836-0a7e2541990a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fHw%3D&w=1000&q=80);
+            /* background-image: url(https://media.istockphoto.com/id/1177300029/vector/abstract-backdrop-grey-background-graphic-minimal-empty-room-with-spotlight-effect-frame.jpg?s=612x612&w=0&k=20&c=KpX-YvR1NmBY-myBi9oI0e8Ka4SKipWtGPv_oW7GfVM=); */
+            /* background-image: url(https://static.wixstatic.com/media/68c4f9_2508861a15b243e39b54cd19063615ab~mv2.png/v1/fill/w_560,h_420,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/68c4f9_2508861a15b243e39b54cd19063615ab~mv2.png); */
+            height: 400px;
+            width: 100%;
+            margin: 30px;
+            margin-top: 10px;
+
+        }
+        #nett{
+            padding: 2px;
+            margin-left: 30px;
+            margin: 20px;
+            
+        }
+        .prjct{
+            color: rgb(126, 25, 8);
+            font-size: large;
+            text-align: center;
+
+        }
+        .gallery{
+            margin: 10px;
+            margin-left:10px ;
+            justify-content: space-between;
+            /* display: flex; */
+            
+            
+        }
+        .gallery img{
+            width:250px ;
+            height: 200px;
+            margin: 30px;
+            
+        }
+        .gallery img:hover{
+            border: 2px rigig black;
+            box-shadow: 4px 4px 4px 4px;
+            width:400px;
+        
+        }
+        .ff{
+            display: flex;
+            border: 5px;
+        }
+        input{
+            width:100% ;
+            align-items: center;
+            flex-direction: row;
+           margin: 15px 0;
+        }
+        form{
+          width: 400px; 
+          margin-left:500px ;
+          margin-right:100px ; 
+        }
+        #contact{
+            background-image: url(https://images.unsplash.com/photo-1629196613836-0a7e2541990a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fHw%3D&w=1000&q=80);
+          /* background-color:rgba(225, 236, 240, 0.618) ; */
+          text-align:center;
+          margin-top: 30px;
+          margin: 30px;
+          padding: 30px;
+        }
+        /* body{ */
+            /* background-image: url(https://thumbs.dreamstime.com/b/grey-textured-background-wallpaper-use-text-image-layout-designs-grey-textured-background-wallpaper-design-147387719.jpg); */
+            /* opacity: 3px; */
+        /* } */

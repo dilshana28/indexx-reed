@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- cdn fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(172, 238, 196);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hotel booking</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">rooms</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link disabled">Disabled</a> -->
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <h2 class="text-center mt-2" style="background-color: rgba(93, 133, 135, 0.6);">LOGIN</h2>
+        <div class="row mt-5 p-3 ">
+            <div class="col-6">
+              <img src="https://cdn.dribbble.com/users/2513509/screenshots/10464236/media/caddf86e3bf626515f247073e4538ebe.jpg?compress=1&resize=400x300" width="500" alt="">
+                <!-- <img src="https://www.travipro.com/assets/images/flight/carimg2.jpg" height="400" width="500" alt=""> -->
+                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTBkiHFsojXb79r_8yKB61Z1GjdvYfc_tbBw&usqp=CAU" alt=""> -->
+            </div>
+            <div class="col-6 border p-4 border-dark">
+    
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div><br><br><br>
+        <h2 class="text-center mt-4 " style="background-color: rgba(93, 133, 135, 0.6);">Registration Form</h2>
+
+        <form class="row g-3 needs-validation mt-4 border p-4 border-dark" novalidate>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="username" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="last name" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltipUsername" class="form-label">email address</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                <div class="invalid-tooltip">
+                  Please choose a unique and valid username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <label for="validationTooltip03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationTooltip03" required>
+              <div class="invalid-tooltip">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip04" class="form-label">State</label>
+              <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-tooltip">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationTooltip05" required>
+              <div class="invalid-tooltip">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form><br><br><br>
+        <!-- card -->
+        <h2 class="text-center mt-4" style="background-color: rgba(93, 133, 135, 0.6);">Hotels</h2>
+        <div class="row ">
+          <div class="col-3">
+            
+        <div class="card" style="width: 18rem;">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/square200/408780909.webp?k=9ed976c3c2a5d028c53a476b90906b156b563b094fd7245fe0efccc8f7e788a0&o=" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hyatt Regency</h5>
+            <p class="card-text">Set in Trivandrum, 1.9 km from Napier Museum, Hyatt Regency Trivandrum offers accommodation with an outdoor swimming pool, free private parking, a fitness centre and a garden. Already reviewed elsewhere Very new contemporary style first class hotel Well trained friendly staff Great base for exploring Trivandrum Highly Recommend Everyone geared for Presidents visit with her
+
+            </p>
+            <a href="#" class="btn btn-primary">book now</a>
+          </div>
+        </div>
+          </div>
+
+        <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/square200/431906902.webp?k=dbd40f90fb68eaf24cb4368269925293aa18cc03653038d72b5d9ea31e8c68d1&o=" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">the panoramic gateway</h5>
+            <p class="card-text">Offering two rooftop heated swimming pools separate for adults and families, two restaurants and a spa and wellness center, The Panoramic Getaway is located in scenic hill station of Munnar. Everything about this place ! The location view from the room is breathtaking! Food at the restaurant was one of the best tasty food I’ve ever tasted in India during my trip.
+
+            </p>
+            <a href="#" class="btn btn-primary">book now</a>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-3 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/square200/409193282.webp?k=a8d1a600c8d5a7c8ddd6a46f394207db0e7f60561068431cfc60dc3dce2b8cf7&o=" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Town bridge hotels and suits</h5>
+            <p class="card-text">Located in Cochin, 12 km from Kochi Biennale, Townbridge Hotels & Suites features views of the city. Really good location just next to the Ernakulam South metro and railway stations you are flexible to move around the city let alone going to southbound ways. The staff were ready to help you. The restaurant offered good meals of the.
+
+            </p>
+            <a href="#" class="btn btn-primary">book now</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-3 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/square200/96951562.webp?k=2a765c54e9cc5a73d15bd4ca1efc648c94a5b33210fe4b76f175bef92b21429c&o=" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tissa's inn</h5>
+            <p class="card-text">Located in the colonial city of Fort Cochin, Tissa's Inn is housed in a mansion 1 km from Fort Cochin Beach and Chinese Fishing Nets. It offers an outdoor pool and massage services. Lovely property, tastefully decorated and has great service and good food. All the facilities were great and super friendly staff - especially the chef who went out of his way to serve us.
+
+            </p>
+            <a href="#" class="btn btn-primary">book now</a>
+          </div>
+        </div>
+        </div>
+
+
+        <!-- Footer -->
+<footer class="text-center text-lg-start text-muted" style="background-color: rgba(93, 133, 135, 0.6);">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://hotelbooking.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+            
+</body>
+</html>
